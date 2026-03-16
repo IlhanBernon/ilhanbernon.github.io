@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilhan Bernon - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Portfolio d'Ilhan Bernon, étudiant en MMI et créateur graphique. Découvrez mes projets et compétences en design et développement web.">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span class="loader-name">Ilhan Bernon</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Ilhan Bernon</div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#experience" class="nav-link">Parcours</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" class="mobile-nav-link">Accueil</a>
+            <a href="#about" class="mobile-nav-link">À Propos</a>
+            <a href="#skills" class="mobile-nav-link">Compétences</a>
+            <a href="#experience" class="mobile-nav-link">Parcours</a>
+            <a href="#projects" class="mobile-nav-link">Projets</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <!-- Text Content -->
+                <div class="hero-text fade-in-left">
+                    <div class="badge">
+                        <span>✨ Étudiant MMI • Créateur Graphique</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line-1">Ilhan</span>
+                        <span class="title-line-2">Bernon</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Passionné par le <span class="highlight-cyan">design</span> et le <span class="highlight-blue">développement web</span>, 
+                        je transforme les idées en expériences numériques mémorables.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                        <a href="#projects" class="btn btn-secondary">Voir Mes Projets</a>
+                    </div>
+
+                    <!-- Quick Info -->
+                    <div class="quick-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Troyes, France</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>IUT de Troyes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="hero-image fade-in-right">
+                    <div class="image-container">
+                        <!-- Decorative Elements -->
+                        <div class="deco-blob deco-1"></div>
+                        <div class="deco-blob deco-2"></div>
+                        
+                        <!-- Main Container -->
+                        <div class="profile-card">
+                            <div class="profile-overlay"></div>
+                            
+                            <!-- Profile Photo -->
+                            <img src="profile.jpg" alt="Ilhan Bernon" class="profile-img">
+
+                            <!-- Floating Icon -->
+                            <div class="floating-icon">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À Propos</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>
+                        Étudiant en BUT Métiers du Multimédia et de l'Internet à l'IUT de Troyes, 
+                        je combine créativité et technique pour créer des expériences digitales uniques.
+                    </p>
+                    <p>
+                        En parallèle de mes études, j'ai lancé ma micro-entreprise <span class="highlight-cyan">IB Mx Frame</span>, 
+                        spécialisée dans la création graphique et la commercialisation.
+                    </p>
+                    <p>
+                        Passionné de motocross en compétition, je retrouve dans le sport les mêmes valeurs 
+                        que dans mon travail : <span class="highlight-blue">dépassement, précision et créativité</span>.
+                    </p>
+                </div>
+
+                <div class="about-details">
+                    <h3>Langues</h3>
+                    <div class="language-bars">
+                        <div class="language-item">
+                            <div class="language-header">
+                                <span>🇬🇧 Anglais</span>
+                                <span class="level">B2</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-header">
+                                <span>🇪🇸 Espagnol</span>
+                                <span class="level">B1</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Centres d'intérêt</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">🏍️ Motocross</div>
+                        <div class="hobby-card">🎾 Tennis</div>
+                        <div class="hobby-card">🎮 Jeux Vidéo</div>
+                        <div class="hobby-card">✈️ Voyages</div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="files/Ilhan_Bernon_CV.pdf" download class="btn btn-primary" style="display: inline-block;">
+                            <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+                            Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Conception Graphique</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-percent">90%</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">💻</div>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-percent">85%</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">✨</div>
+                        <h3>Suite Adobe</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-percent">70%</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">📊</div>
+                        <h3>Gestion de Projet</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-percent">75%</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">📋</div>
+                        <h3>Suite Office 365</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                    <div class="skill-percent">60%</div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="tools-section">
+                <h3>Outils Maîtrisés</h3>
+                <div class="tools-grid">
+                    <div class="tool-badge tool-ps">
+                        <img src="images/aps.svg" alt="Adobe Photoshop" class="tool-icon">
+                        Photoshop
+                    </div>
+                    <div class="tool-badge tool-ai">
+                        <img src="images/ai.svg" alt="Adobe Illustrator" class="tool-icon">
+                        Illustrator
+                    </div>
+                    <div class="tool-badge tool-lr">
+                        <img src="images/alr.svg" alt="Adobe Lightroom" class="tool-icon">
+                        Lightroom
+                    </div>
+                    <div class="tool-badge tool-office">
+                        <img src="images/office-2.svg" alt="Office 365" class="tool-icon">
+                        Suite Office 365
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Parcours</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Education -->
+                <div class="experience-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Formation
+                    </h3>
+                    
+                    <div class="timeline-item current">
+                        <div class="current-badge">EN COURS</div>
+                        <h4>BUT Métiers du Multimédia et de l'Internet</h4>
+                        <div class="item-subtitle">IUT de Troyes</div>
+                        <div class="item-date">2025 - en cours</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Baccalauréat Général</h4>
+                        <div class="item-subtitle">Lycée Camille Claudel</div>
+                        <div class="item-date">2022-2025</div>
+                        <div class="item-mention">
+                            <i class="fas fa-award"></i>
+                            Mention Assez Bien
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Experience -->
+                <div class="experience-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-briefcase"></i>
+                        Expériences
+                    </h3>
+
+                    <div class="timeline-item">
+                        <div class="entrepreneur-badge">ENTREPRENEUR</div>
+                        <h4>Micro Entrepreneur</h4>
+                        <div class="item-subtitle">IB Mx Frame</div>
+                        <div class="item-date">Depuis Août 2025</div>
+                        <p>Création graphique et commercialisation</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Agent d'Accueil</h4>
+                        <div class="item-subtitle">ESTAC Troyes</div>
+                        <div class="item-date">Depuis 2024</div>
+                        <p>Accueil et relations publiques</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Ouvrier Agricole</h4>
+                        <div class="item-subtitle">SCEA Mauclaire-Menuel</div>
+                        <div class="item-date">Août 2025</div>
+                        <p>Travail saisonnier</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Mes réalisations arrivent bientôt...</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="kaobucha.html" style="text-decoration: none; color: inherit;">
+                        <div class="project-image">
+                            <img src="images/kaobucha.png" alt="Charte Graphique Kaobucha">
+                        </div>
+                        <div class="project-info">
+                            <h3>Charte Graphique Kaobucha</h3>
+                            <p class="project-category">Design Graphique</p>
+                            <p class="project-description">Création d'une identité visuelle complète pour une marque de boisson sans alcool. Développement du logo, palette de couleurs, typographie et guidelines de la marque.</p>
+                        </div>
+                    </a>
+                    <a href="kaobucha.html" class="btn btn-primary" style="display: block; text-align: center; margin: 1rem;">Voir le projet</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/mojo-tunes.png" alt="Identité Mojo Tunes">
+                    </div>
+                    <div class="project-info">
+                        <h3>Refonte Identité Mojo Tunes</h3>
+                        <p class="project-category">Design Graphique</p>
+                        <p class="project-description">Refonte complète de l'identité visuelle d'une boutique de musique locale. Création d'un nouveau logo, palette de couleurs moderne et cohérente, typographie et supports de communication.</p>
+                    </div>
+                    <a href="mojotunes.html" class="btn btn-primary" style="display: block; text-align: center; margin: 1rem;">Voir le projet</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ibmxframe.png" alt="IB Mx Frame">
+                    </div>
+                    <div class="project-info">
+                        <h3>IB Mx Frame</h3>
+                        <p class="project-category">Design & Produit</p>
+                        <p class="project-description">Création de cadres 100% personnalisés pour les passionnés de motocross. Design unique et sur mesure, alliant créativité et passion pour le sport.</p>
+                    </div>
+                    <a href="ibmxframe.html" class="btn btn-primary" style="display: block; text-align: center; margin: 1rem;">Voir le projet</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="projects-note">
+                <p>Cette section sera bientôt remplie avec mes projets de design graphique et développement web !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Une idée ? Un projet ? Discutons-en !</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:ilhanbernon10@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ilhanbernon10@gmail.com</p>
+                </a>
+
+                <a href="tel:+33783176949" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>07 83 17 69 49</p>
+                </a>
+
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localisation</h3>
+                    <p>Creney-Près-Troyes<br>Aube, France</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <h3>Travaillons ensemble !</h3>
+                <p>
+                    Que ce soit pour un projet de design, de développement web, ou simplement pour échanger,
+                    n'hésite pas à me contacter.
+                </p>
+                <a href="mailto:ilhanbernon10@gmail.com" class="btn btn-primary">Envoyer un message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    © 2026 Ilhan Bernon. Tous droits réservés.
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ilhan-bernon-a350823ab/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
