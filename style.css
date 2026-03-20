@@ -1493,14 +1493,9 @@ section {
     border-radius: 1rem;
     aspect-ratio: 1;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.3);
-}
 
 .gallery-item img {
     width: 100%;
@@ -1509,9 +1504,6 @@ section {
     transition: transform 0.4s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
 
 .gallery-overlay {
     position: absolute;
@@ -1519,7 +1511,6 @@ section {
     left: 0;
     right: 0;
     top: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
     display: flex;
     align-items: flex-end;
     padding: 1.5rem;
@@ -1587,4 +1578,38 @@ section {
 .pdf-section-description {
     color: #cbd5e1;
     margin-bottom: 2rem;
+}
+
+/* spécifique pour la page MC3C - Centrage et affichage complet */
+.gallery-mc3c {
+    background: rgba(30, 41, 59, 0.3); /* On garde le style de fond */
+}
+
+.grid-mc3c {
+    display: flex;             /* On passe en Flexbox pour centrer facilement */
+    justify-content: center;   /* Centre horizontalement */
+    flex-wrap: wrap;           /* Permet de revenir à la ligne sur mobile */
+    gap: 3rem;                 /* Espace entre les deux affiches */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-mc3c .gallery-item {
+    aspect-ratio: auto;        /* Supprime le format carré */
+    width: 350px;              /* Largeur fixe pour l'affiche */
+    height: auto;              /* Laisse la hauteur s'adapter à l'image */
+}
+
+.grid-mc3c .gallery-item img {
+    object-fit: contain;       /* Affiche l'image en entier sans la couper */
+    height: auto;
+    border-radius: 0.5rem;     /* Un petit arrondi pour le style */
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+    .grid-mc3c .gallery-item {
+        width: 100%;           /* Prend toute la largeur sur petit écran */
+        max-width: 300px;      /* Mais garde une taille raisonnable */
+    }
 }
