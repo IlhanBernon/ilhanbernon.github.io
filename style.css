@@ -1516,6 +1516,12 @@ section {
     padding: 1.5rem;
     opacity: 1;
     transition: opacity 0.3s ease;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.3) 40%,
+        transparent 100%
+    );
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -1527,6 +1533,7 @@ section {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* Responsive Gallery */
